@@ -32,11 +32,11 @@ export default function WordCount() {
 			<div style={{minWidth: "75vw"}}>
 			<Form className="d-flex justify-content-center mt-3">
 				<Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-					<Form.Control onChange={handleCount} as="textarea" style={{ minHeight: "60vh", minWidth: "75vw" }} placeholder="Start typing..." />
+					<Form.Control onChange={handleCount} as="textarea" style={{ minHeight: "50vh", minWidth: "75vw" }} placeholder="Start typing..." />
 				</Form.Group>
 			</Form>
 			</div>
-			<Card style={{ width: '30rem', textAlign: "justify"}}>
+			<Card style={{ maxWidth: '60vw', minWidth: '60vw', textAlign: "justify"}}>
 				<h3>Counts:</h3>
 				<ListGroup variant="flush">
 					<ListGroup.Item>Words: {wordCount}</ListGroup.Item>
